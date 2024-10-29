@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bienvenue dans le monde du CSS</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bienvenue dans le monde du CSS</h1>
+    </header>
+    <main>
+      <p>
+        CSS, ou Cascading Style Sheets, est un langage de style utilisé pour
+        décrire la présentation d'un document écrit en HTML ou XML. CSS permet
+        de contrôler la mise en page, les couleurs, les polices et les
+        animations des éléments d'une page web.
+      </p>
+      <section>
+        <h2>Quelques jeux vidéo populaires</h2>
+        <div class="game-cards">
+          <div class="game-card" onclick="selectGame('The Legend of Zelda') onkeydown="selectGame('The Legend of Zelda')" tabindex="0">The Legend of Zelda">
+            The Legend of Zelda
+          </div>
+          <div class="game-card" onclick="selectGame('Super Mario Odyssey')">
+            Super Mario Odyssey
+          </div>
+          <div class="game-card" onclick="selectGame('Minecraft')">
+            Minecraft
+          </div>
+        </div>
+        <p id="selection-message"></p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2022 Tous droits réservés</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightblue;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: lightblue;
+  color: navy;
+  padding: 20px;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+main {
+  margin: 20px;
+}
+p {
+  color: darkslategray;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+footer {
+  background-color: lightblue;
+  color: navy;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: 2rem;
+}
+/* Previous CSS code... */
+
+.game-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.game-card {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 1rem;
+  flex: 1 0 20%;
+  text-align: center;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.game-card:nth-child(1) {
+  background-color: #add8e6;
+}
+
+.game-card:nth-child(2) {
+  background-color: #87ceeb;
+}
+
+.game-card:nth-child(3) {
+  background-color: #00bfff;
+}
+
+.game-card:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
