@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleform.css" />
+    <title>Inscription au Club de Jeux Vidéo</title>
+  </head>
+  <body>
+    <form action="/submit_inscription" method="post">
+      <fieldset>
+        <legend>Inscription au club de jeux vidéo</legend>
+
+        <!-- Nom -->
+        <label for="nom">Nom (max 30 caractères) :</label>
+        <input
+          type="text"
+          id="nom"
+          name="nom"
+          pattern="[A-Za-z]{1,30}"
+          required
+          aria-describedby="nom_instructions nom_error"
+        />
+        <span id="nom_instructions"
+          >Veuillez entrer votre nom (lettres uniquement).</span
+        >
+        <span id="nom_error" class="error" aria-live="polite"></span
+        ><br /><br />
+
+        <!-- Prénom -->
+        <label for="prenom">Prénom (max 30 caractères) :</label>
+        <input
+          type="text"
+          id="prenom"
+          name="prenom"
+          pattern="[A-Za-z]{1,30}"
+          required
+          aria-describedby="prenom_instructions prenom_error"
+        />
+        <span id="prenom_instructions"
+          >Veuillez entrer votre prénom (lettres uniquement).</span
+        >
+        <span id="prenom_error" class="error" aria-live="polite"></span
+        ><br /><br />
+
+        <!-- Âge -->
+        <label for="age">Âge :</label>
+        <input
+          type="number"
+          id="age"
+          name="age"
+          min="10"
+          max="100"
+          required
+          aria-describedby="age_instructions age_error"
+        />
+        <span id="age_instructions"
+          >Veuillez entrer votre âge (entre 10 et 100 ans).</span
+        >
+        <span id="age_error" class="error" aria-live="polite"></span
+        ><br /><br />
+
+        <!-- E-mail -->
+        <label for="email">Adresse e-mail :</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+          required
+          aria-describedby="email_instructions email_error"
+        />
+        <span id="email_instructions"
+          >Veuillez entrer votre email (format valide).</span
+        >
+        <span id="email_error" class="error" aria-live="polite"></span
+        ><br /><br />
+
+        <!-- Type de jeu préféré -->
+        <label for="jeu">Type de jeu préféré :</label>
+        <select
+          id="jeu"
+          name="jeu"
+          required
+          aria-describedby="jeu_instructions jeu_error"
+        >
+          <option value="" disabled selected>--Choisir--</option>
+          <option value="action">Action</option>
+          <option value="aventure">Aventure</option>
+          <option value="strategie">Stratégie</option>
+        </select>
+        <span id="jeu_instructions"
+          >Veuillez choisir votre type de jeu préféré.</span
+        >
+        <span id="jeu_error" class="error" aria-live="polite"></span
+        ><br /><br />
+
+        <!-- Consoles en votre possession -->
+        <p>Consoles en votre possession :</p>
+        <input
+          type="checkbox"
+          id="playstation"
+          name="console"
+          value="playstation"
+          aria-describedby="console_instructions console_error"
+        />
+        <label for="playstation">Playstation</label><br />
+
+        <input
+          type="checkbox"
+          id="xbox"
+          name="console"
+          value="xbox"
+          aria-describedby="console_instructions console_error"
+        />
+        <label for="xbox">Xbox</label><br />
+
+        <input
+          type="checkbox"
+          id="nintendo"
+          name="console"
+          value="nintendo"
+          aria-describedby="console_instructions console_error"
+        />
+        <label for="nintendo">Nintendo Switch</label><br />
+
+        <input
+          type="checkbox"
+          id="pc"
+          name="console"
+          value="pc"
+          aria-describedby="console_instructions console_error"
+        />
+        <label for="pc">PC</label><br />
+
+        <span id="console_instructions"
+          >Veuillez sélectionner au moins une console.</span
+        >
+        <span id="console_error" class="error" aria-live="polite"></span
+        ><br /><br />
+
+        <!-- Boutons de soumission et de réinitialisation -->
+        <input
+          type="submit"
+          value="Soumettre l'inscription"
+          aria-describedby="submit_instructions"
+        />
+        <span id="submit_instructions"
+          >Cliquez ici pour soumettre votre inscription.</span
+        >
+        <input
+          type="reset"
+          value="Réinitialiser le formulaire"
+          aria-describedby="reset_instructions"
+        />
+        <span id="reset_instructions"
+          >Cliquez ici pour réinitialiser le formulaire.</span
+        >
+        <br /><br />
+
+        <a href="/accueil">Retour à la page d'accueil</a>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select {
+  width: 300px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="submit"]:disabled {
+  opacity: 0.5;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input[type="submit"].loading {
+  cursor: not-allowed;
+  background-color: #ccc;
+  color: white;
+  pointer-events: none;
+  animation: loading-spinner 1s infinite linear;
+}
+
+@keyframes loading-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
