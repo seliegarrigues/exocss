@@ -20,6 +20,9 @@
           pattern="[A-Za-z]{1,30}"
           required
           aria-describedby="nom_instructions nom_error"
+          oninput="setCustomValidity('')"
+          oninvalid="this.setCustomValidity('Le nom ne peut contenir que des lettres et doit avoir une longueur maximale
+        de 30 caractères.')"
         />
         <span id="nom_instructions"
           >Veuillez entrer votre nom (lettres uniquement).</span
