@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header,
+  footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-template-areas:
+     "header header header"
+    "content1 content1 sidebar"
+    "content2 footer footer";
+    grid-gap: 10px;
+    padding: 20px;
+  }
+  
+ /*  .item1 {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .item2 {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .item3 {
+    grid-column: 3;
+    grid-row: 1;
+    background-color: #ffc107;
+    color: #000;
+  }
+  
+  .item4 {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .item5 {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: #17a2b8;
+    color: #fff;
+  } */
+  
+ /*  .item6 {
+    grid-column: 3;
+    grid-row: 2;
+    background-color: #6f42c1;
+    color: #fff;
+  } */
+  
+  /* div[class^="item"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  /* style.css */
+  /* 
+  
+  .item {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  } 
+   */
+ /*  
+  .item1 {
+    background-color: blue;
+  }
+  
+  .item2 {
+    background-color: green;
+  }
+  
+  .item3 {
+    background-color: red;
+  }
+  
+  .item4 {
+    background-color: yellow;
+  }
+  
+  .item5 {
+    background-color: purple;
+  }
+  
+  .item6 {
+    background-color: orange;
+  } */
+  #header {
+    grid-area: header;
+    background-color: #007bff;
+  color: #fff;
+  }
+  #sidebar {
+    grid-area: sidebar;
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  #content1 {
+    grid-area: content1;
+    background-color: #ffc107;
+    color: #000;
+  }
+  
+  #content2 {
+    grid-area: content2;
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  #footer {
+    grid-area: footer;
+    background-color: #17a2b8;
+    color: #fff;
+  }
